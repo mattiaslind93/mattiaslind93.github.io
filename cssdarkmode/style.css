@@ -1,0 +1,344 @@
+/* fonts */
+
+@font-face {
+    font-family: "mbaskerville";
+  src: url(fonts/baskerville/baskerville.ttf) format('truetype');
+}
+@font-face {
+    font-family: "mbella";
+  src: url(fonts/bellaberry/bellaberry.otf) format('opentype');
+}
+@font-face {
+    font-family: "peanut";
+  src: url(fonts/peanut/peanut.ttf) format('truetype');
+}
+@font-face {
+    font-family: "summit";
+  src: url(fonts/summit/summit.ttf) format('truetype');
+}
+
+/* body/general styling */
+html {
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+}
+body {
+ padding: none;
+ margin: none;
+ background-color: #171717;
+ //background: radial-gradient(#0c0c0c, #000);
+ background-repeat: no-repeat;
+ font-family: mbaskerville;
+ letter-spacing: 0.11em;
+ font-weight: 100;
+ overflow-x: hidden;
+ color: #fcfcfc;
+ //background-image: url(images/backdrop1.jpg);
+ background-size: cover;
+ background-position: center;
+
+}
+.gradient {
+    background: radial-gradient(red, orange);
+}
+
+::selection {
+  color: #fff;
+  background: yellow;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+/* divs */
+
+#header {
+  width: auto;
+  padding: 20px;
+  padding-left: 80px;
+}
+
+.site-footer
+{
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+#footersection {
+    width: 30%;
+    height: auto;
+    float: left;
+}
+.pdf {
+    width: 90vw;
+    max-width: 1800px;
+    height: 90vh;
+    margin: auto;
+}
+.content {
+    width: 100%;
+    height: auto;
+}
+#mattias {
+    width: 25vh;
+    height: 25vh;
+    margin: auto;
+    margin-top: 15vh;
+    border-radius: 500px;
+    background-image: url(images/mattias2.jpg);
+    background-size: cover;
+}
+
+
+
+.projectwrapper {
+    width: 19vw;
+    height: 27vw;
+    max-width: 380px;
+    max-height: 550px;
+    margin: 6%;
+    margin-top: 5vw;
+    position: relative;
+    float: left;
+    transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.2s;
+}
+.projectframe, .projectimage {
+    width: 19vw;
+    height: 27vw;
+    max-width: 380px;
+    max-height: 550px;
+    transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.2s;
+    position: absolute;
+}
+.projectframe {
+    border-radius: 3px;
+    z-index: 1;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.projectimage {
+    z-index: -2;
+    border-radius: 3px;
+    transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.2s;
+    //box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+    filter: blur(40px) brightness(2);
+    opacity: 0;
+}
+
+
+
+
+.grow:hover .projectframe {
+    transform: scale(1.05);
+    box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+.grow:hover .projectimage {
+    //filter: blur(40px) brightness(2);
+    opacity: 0.2;
+}
+
+
+
+
+
+
+.autowork.projectframe::before, .autowork {
+  background-image: url(images/autowork.jpg);
+  background-size: cover;
+  border-radius: 3px;
+}
+.vision.projectframe::before, .vision {
+  background-image: url(images/vision.jpg);
+  background-size: cover;
+  border-radius: 3px;
+}
+.galbusera.projectframe::before, .galbusera {
+    background-image: url(images/galbusera.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+.merge.projectframe::before, .merge {
+    background-image: url(images/merge.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+.venergy.projectframe::before, .venergy {
+    background-image: url(images/venergy.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+.harry.projectframe::before, .harry {
+    background-image: url(images/harry.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+.empires.projectframe::before, .empires {
+    background-image: url(images/empires.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+.disney.projectframe::before, .disney {
+    background-image: url(images/disney.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+.totally.projectframe::before, .totally {
+    background-image: url(images/totally.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+.wolt.projectframe::before, .wolt {
+    background-image: url(images/wolt.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+.krypton.projectframe::before, .krypton {
+    background-image: url(images/krypton.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+.westworld.projectframe::before, .westworld {
+    background-image: url(images/westworld.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+.battlefield.projectframe::before, .battlefield {
+    background-image: url(images/battlefield.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+.lost.projectframe::before, .lost {
+    background-image: url(images/lost.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+.ufc.projectframe::before, .ufc {
+    background-image: url(images/ufc.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+.volvo.projectframe::before, .volvo {
+    background-image: url(images/volvo.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+.uber.projectframe::before, .uber {
+    background-image: url(images/uber.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+.preem.projectframe::before, .preem {
+    background-image: url(images/preem.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+.atg.projectframe::before, .atg {
+    background-image: url(images/atg.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+.scalped.projectframe::before, .scalped {
+    background-image: url(images/scalped.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+.mrclean.projectframe::before, .mrclean {
+    background-image: url(images/mrclean.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+.very.projectframe::before, .very {
+    background-image: url(images/very.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+.knockout.projectframe::before, .knockout {
+    background-image: url(images/knockout.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+.farmville.projectframe::before, .farmville {
+    background-image: url(images/farmville.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+.benefiber.projectframe::before, .benefiber {
+    background-image: url(images/benefiber.jpg);
+    background-size: cover;
+    border-radius: 3px;
+}
+
+
+/* fonts */
+
+h1 {
+    font-weight: 100;
+    letter-spacing: 10px;
+    font-size: 1.8em;
+}
+h2 {
+    font-family: peanut;
+    font-weight: 100;
+    letter-spacing: 5px;
+    font-size: 9vh;
+    line-height: 10vh;
+    //color: #ccc;
+    background: -webkit-radial-gradient(#fff, #ccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h3 {
+    font-weight: 100;
+    letter-spacing: 5px;
+    font-size: 1.1vh;
+    line-height: 1vh;
+}
+h4 {
+    font-weight: 100;
+    letter-spacing: 5px;
+    font-size: 1.5vh;
+    line-height: 0.1vh;
+    color: #fff;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.ink {
+    font-family: summit;
+    font-size: 2.2vh;
+    line-height: 0.1vh;
+    color: #ccc;
+    text-shadow: 1px 1px 1px #313131;
+}
+
+
+/* Showreel above the project cards: spans exactly the 3-card row (3 cards + 4 card margins) */
+.reelwrapper {
+    float: left;
+    clear: both;
+    width: calc(min(19vw, 380px) * 3 + 24%);
+    margin: 5vw 6% 0 6%;
+}
+.reelframe {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+    background: #000;
+}
+.reelframe iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}

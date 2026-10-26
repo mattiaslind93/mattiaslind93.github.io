@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Mattias Lind - Contact</title>
+  <meta name="description" content="Mattias Lind">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="cssdarkmode/grid.css">
+<link rel="stylesheet" href="cssdarkmode/style.css">
+<link rel="stylesheet" href="cssdarkmode/nav.css">
+<script type="text/javascript" src="js/nav.js"></script>
+<script type="text/javascript" src="js/content.js"></script>
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="nav__content">
+            <ul class="nav__list">
+                <a href="javascript:void" onclick="homeClick()"><li class="nav__list-item">Home</li></a>
+                <a href="javascript:void" onclick="cvClick()"><li class="nav__list-item">CV</li></a>
+                <a href="javascript:void" onclick="projectsClick()"><li class="nav__list-item">Work</li></a>
+                <a href="javascript:void" onclick="contactClick()"><li class="nav__list-item">Contact</li></a>
+            </ul>
+        </div>
+    </div>
+ 
+
+    <main class="grid">
+        <div class="box" style="height: 120px;">
+            <div id="header">
+                <h1>MATTIAS LIND</h1>
+            </div>
+            <div class="menu-icon">
+                <span class="menu-icon__line menu-icon__line-left"></span>
+                <span class="menu-icon__line"></span>
+                <span class="menu-icon__line menu-icon__line-right"></span>
+            </div>
+        </div>
+        
+       <div class="box transition fade">
+            <div id="mattias"></div>
+        </div>
+        <div class="box transition fade" style="margin-top: 15vh; margin-left: 80px;">
+                <h4>Email</h4> <br />
+                <a href = "mailto: mattiaslind@me.com" class="ink">mattiaslind@me.com</a> <br /><br /><br />
+                
+                <h4>ArtStation</h4> <br />
+                <a href="https://www.artstation.com/mattiaslind93" target="_blank" class="ink">Mattias Lind - ArtStation</a>
+        </div>
+    </main>
+    
+        <!-- Site footer -->
+        <footer class="site-footer transition fade">
+            <div class="footergrid">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box">
+                    <div id="footersection">
+                        <h3>Socials</h3>
+                        <br/>
+                        <a href="https://www.linkedin.com/in/mattias-lind-904b3454/" target="_blank">LinkedIn</a>
+                        <br/>
+                        <a href="https://www.artstation.com/mattiaslind93" target="_blank">ArtStation</a>
+                    </div>
+                    <div id="footersection">
+                        <h3>Phone</h3>
+                        <br/>
+                        +46 70 356 12 50
+                        <br/>
+                        Sweden
+                    </div>
+                    <div id="footersection">
+                        <h3>Email</h3>
+                        <br/>
+                        <a href = "mailto: mattiaslind@me.com">mattiaslind@me.com</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+<script>
+    document.querySelector('.content').innerHTML = pagesContent['home'];
+</script>
+</body>
+</html>
+
+
